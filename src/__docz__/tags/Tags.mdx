@@ -1,0 +1,46 @@
+---
+name: Tags
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Tag from "../../components/tags/Tag";
+import SecondaryTag from "../../components/tags/SecondaryTag";
+import '../../styles/output.css';
+
+# Tags
+Tag components used to link internally
+
+## Tag
+<Props of={ Tag } />
+
+### Basic use
+<Playground>
+    <Tag title="Tag copy" />
+</Playground>
+
+### Examples
+
+***bgClass***
+<Tag
+    title="Tag copy"
+    bgClass="bg-gray-dark"
+    borderColourClass="border-gray-dark"
+/>
+
+***textColourClass***
+<Tag
+    title="Tag copy"
+    textColourClass="text-black"
+/>
+
+***borderColourClass***
+<Tag
+    title="Tag copy"
+    borderColourClass="border-black"
+/>
+
+## Secondary Tag
+<Playground>
+    <SecondaryTag title="Secondary Tag copy" />
+</Playground>
