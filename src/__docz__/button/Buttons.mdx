@@ -1,0 +1,64 @@
+---
+name: Buttons
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Button from "../../components/button/Button";
+import SecondaryButton from "../../components/button/SecondaryButton";
+import '../../styles/output.css';
+
+# Buttons
+Button components used to link internally
+
+## Primary Button
+<Props of={ Button } />
+
+### Basic use
+<Playground>
+    <Button title="Button" />
+</Playground>
+
+### Examples
+
+***bgClass***
+<Button
+    title="Button"
+    bgClass="bg-gray-dark"
+/>
+
+***bgHoverClass***
+<Button
+    title="Button"
+    bgClass="bg-gray-dark"
+    bgHoverClass="bg-gray-primary"
+/>
+
+***small***
+<Button
+    title="Button"
+    small
+/>
+
+***disabled***
+<Button
+    title="Button"
+    disabled
+/>
+
+***borderColourClass***
+<Button
+    title="Button"
+    borderColourClass="border-black"
+/>
+
+***fullwidth***
+<Button
+    title="Button"
+    fullwidth
+/>
+
+## Secondary Button
+<Playground>
+    <SecondaryButton title="Secondary Button" />
+</Playground>
