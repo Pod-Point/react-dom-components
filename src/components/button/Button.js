@@ -3,7 +3,6 @@ import classNames from 'classnames';
 
 function Button({
     title,
-    url,
     fullwidth,
     bgClass,
     bgHoverClass,
