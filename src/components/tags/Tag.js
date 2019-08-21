@@ -1,21 +1,29 @@
 import React from 'react';
 import classNames from 'classnames';
+import styles from './styles';
 
 function Tag({
+    type,
     title,
-    bgClass,
-    textColourClass,
-    borderColourClass,
+    classList,
 }) {
-    const baseStyles = (
-        "inline-block px-2 rounded text-center font-sans border-solid border text-xs uppercase"
-    );
+    let typeStyles;
+
+    switch (type) {
+        case 'primary':
+            typeStyles = styles.primaryStyles
+            break;
+        case 'secondary':
+            typeStyles = styles.secondaryStyles
+            break;
+        default:
+            typeStyles = null
+    }
 
     var classes = classNames(
-        baseStyles,
-        bgClass ? bgClass : 'bg-green-primary',
-        textColourClass ? textColourClass : 'text-white',
-        borderColourClass ? borderColourClass : 'border-green-primary',
+        styles.baseStyles,
+        typeStyles,
+        classList,
     );
 
     return (

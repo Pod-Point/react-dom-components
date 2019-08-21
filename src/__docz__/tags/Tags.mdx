@@ -5,7 +5,6 @@ menu: Components
 
 import { Playground, Props } from 'docz';
 import Tag from "../../components/tags/Tag";
-import SecondaryTag from "../../components/tags/SecondaryTag";
 import '../../styles/output.css';
 
 # Tags
@@ -16,13 +15,14 @@ Tag components used to link internally
 
 ### Basic use
 <Playground>
-    <Tag title="Tag copy" />
+    <Tag type="primary" title="Tag copy" />
 </Playground>
 
 ### Examples
 
 ***bgClass***
 <Tag
+    type="primary"
     title="Tag copy"
     bgClass="bg-gray-dark"
     borderColourClass="border-gray-dark"
@@ -30,17 +30,30 @@ Tag components used to link internally
 
 ***textColourClass***
 <Tag
+    type="primary"
     title="Tag copy"
     textColourClass="text-black"
 />
 
 ***borderColourClass***
 <Tag
+    type="primary"
     title="Tag copy"
     borderColourClass="border-black"
 />
 
 ## Secondary Tag
 <Playground>
-    <SecondaryTag title="Secondary Tag copy" />
+    <Tag
+        type="secondary"
+        title="Secondary Tag copy"
+    />
+</Playground>
+
+## Custom Tag
+<Playground>
+    <Tag
+        title="Secondary Tag copy"
+        classList="bg-black text-green-2 border-dashed border border-blue-1"
+    />
 </Playground>

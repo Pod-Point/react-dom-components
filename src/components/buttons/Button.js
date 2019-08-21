@@ -16,10 +16,10 @@ function Button({
 
     switch (type) {
         case 'primary':
-            typeStyles = styles.primaryStyles.baseStyles
+            typeStyles = styles.primaryStyles
             break;
         case 'secondary':
-            typeStyles = styles.secondaryStyles.baseStyles
+            typeStyles = styles.secondaryStyles
             break;
         default:
             typeStyles = null
@@ -27,7 +27,7 @@ function Button({
 
     var classes = classNames(
         styles.baseStyles,
-        typeStyles,
+        typeStyles && typeStyles.baseStyles,
         small ?
             `${ styles.smallStyles.pY } ${ styles.smallStyles.fontSize }` :
             `${ styles.defaultStyles.pY } ${ styles.defaultStyles.fontSize }`,
