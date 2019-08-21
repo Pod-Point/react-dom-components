@@ -1,30 +1,40 @@
 import React from 'react';
 import classNames from 'classnames';
+import styles from './styles';
 
 function Button({
+    type,
     title,
     fullwidth,
-    bgClass,
-    bgHoverClass,
-    textColourClass,
     small,
     disabled,
-    borderColourClass,
     onClick,
+    classList,
+    bgHoverClass,
 }) {
-    const baseStyles = (
-        "px-6 rounded text-center font-sans"
-    );
+    let typeStyles;
+
+    switch (type) {
+        case 'primary':
+            typeStyles = styles.primaryStyles.baseStyles
+            break;
+        case 'secondary':
+            typeStyles = styles.secondaryStyles.baseStyles
+            break;
+        default:
+            typeStyles = null
+    }
 
     var classes = classNames(
-        baseStyles,
+        styles.baseStyles,
+        typeStyles,
+        small ?
+            `${ styles.smallStyles.pY } ${ styles.smallStyles.fontSize }` :
+            `${ styles.defaultStyles.pY } ${ styles.defaultStyles.fontSize }`,
         fullwidth && 'w-full',
-        bgClass ? bgClass : 'bg-green-primary',
-        textColourClass ? textColourClass : 'text-white',
-        small ? 'py-2 text-sm' : 'py-3 text-base',
-        borderColourClass && `${ borderColourClass } border-solid border rounded-md`,
-        !disabled && `hover:${ bgHoverClass ? bgHoverClass : 'bg-green-1' }`,
+        !disabled && `hover:${ bgHoverClass ? bgHoverClass : typeStyles.bgHover }`,
         disabled && 'cursor-default',
+        classList,
     );
 
     return (

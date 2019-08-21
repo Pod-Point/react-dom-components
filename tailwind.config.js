@@ -23,7 +23,7 @@ module.exports = {
             gray: {
                 primary: "#7F8083",
                 dark: "#19191A",
-                1: "##CDCCCB",
+                1: "#CDCCCB",
                 2: "#EFEFEF",
             },
             blue: {

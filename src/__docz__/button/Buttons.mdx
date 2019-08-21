@@ -5,7 +5,6 @@ menu: Components
 
 import { Playground, Props } from 'docz';
 import Button from "../../components/buttons/Button";
-import SecondaryButton from "../../components/buttons/SecondaryButton";
 import '../../styles/output.css';
 
 # Buttons
@@ -16,61 +15,55 @@ Button components used to link internally
 
 ### Basic use
 <Playground>
-    <Button title="Button" />
+    <Button
+        type="primary"
+        title="Button"
+    />
 </Playground>
 
-### Examples
+### Primary Button Examples
 
 ***onClick***
 <Button
+    type="primary"
     title="Button"
     onClick={ () => alert('Clicked')}
 />
 
-***bgClass***
-<Button
-    title="Button"
-    bgClass="bg-gray-dark"
-/>
-
-***bgHoverClass***
-<Button
-    title="Button"
-    bgClass="bg-gray-dark"
-    bgHoverClass="bg-gray-primary"
-/>
-
-***textColourClass***
-<Button
-    title="Button"
-    textColourClass="text-black"
-/>
-
 ***small***
 <Button
+    type="primary"
     title="Button"
     small
 />
 
 ***disabled***
 <Button
+    type="primary"
     title="Button"
     disabled
 />
 
-***borderColourClass***
-<Button
-    title="Button"
-    borderColourClass="border-black"
-/>
-
 ***fullwidth***
 <Button
+    type="primary"
     title="Button"
     fullwidth
 />
 
 ## Secondary Button
 <Playground>
-    <SecondaryButton title="Secondary Button" />
+    <Button
+        type="secondary"
+        title="Secondary Button"
+    />
+</Playground>
+
+## Custom Button
+<Playground>
+    <Button
+        title="Custom Button"
+        classList="bg-black text-white"
+        bgHoverClass="bg-gray-1"
+    />
 </Playground>
