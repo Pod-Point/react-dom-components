@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './styles';
+import * as styles from './styles';
 
 function Tag({
     type,
@@ -27,7 +27,7 @@ function Tag({
     );
 
     return (
-        <div className={ classes }>
+        <div class={ classes }>
             { title }
         </div>
     )

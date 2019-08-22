@@ -1,5 +1,5 @@
 const baseStyles = (
-    "px-6 rounded text-center font-sans"
+    "px-6 rounded text-center"
 );
 
 const defaultStyles = {
@@ -22,7 +22,7 @@ const smallStyles = {
     fontSize: 'text-sm',
 };
 
-export default {
+export {
     baseStyles,
     defaultStyles,
     primaryStyles,

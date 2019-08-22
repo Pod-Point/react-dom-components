@@ -5,15 +5,17 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "docz-plugin-css": "^0.11.0",
+    "postcss-import": "^12.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
     "tailwindcss": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "twcss": "tailwind build src/styles/styles.css -o src/styles/output.css",
-    "build": "react-scripts build",
+    "watch:tailwind": "postcss src/styles/styles.css -o src/styles/output.css -w",
+    "build:tailwind": "postcss src/styles/styles.css -o src/styles/output.css",
+    "start": "react-scripts start & watch:tailwind",
+    "build": "react-scripts build && build:tailwind",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docz:dev": "docz dev",
@@ -37,6 +39,7 @@
   "devDependencies": {
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
+    "postcss-cli": "^6.1.3",
     "react-hot-loader": "^4.12.11"
   }
 }

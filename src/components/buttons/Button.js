@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './styles';
+import * as styles from './styles';
 
 function Button({
     type,
@@ -38,7 +38,7 @@ function Button({
     );
 
     return (
-        <button className={ classes } onClick={ onClick } disabled={ disabled }>
+        <button class={ classes } onClick={ onClick } disabled={ disabled }>
             { title }
         </button>
     )

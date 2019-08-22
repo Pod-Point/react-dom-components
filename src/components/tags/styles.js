@@ -10,7 +10,7 @@ const secondaryStyles = (
     'bg-transparent text-gray-primary border-solid border border-gray-primary'
 );
 
-export default {
+export {
     baseStyles,
     primaryStyles,
     secondaryStyles,
