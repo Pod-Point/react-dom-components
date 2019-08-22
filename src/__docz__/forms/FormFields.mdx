@@ -1,0 +1,65 @@
+---
+name: Form Fields
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import InputField from "../../components/forms/InputField";
+import SelectField from "../../components/forms/SelectField";
+import '../../styles/output.css';
+
+# Forms Fields
+Form components used to link internally
+
+<!-- Text input field -->
+## Input Field
+<Props of={ InputField } />
+
+### Basic use
+<Playground>
+    <InputField />
+</Playground>
+
+### Input Field Examples
+
+***placeholder***
+<InputField placeholder="placeholder" />
+
+***label***
+<InputField label="Label copy" />
+
+***information***
+<InputField message="Information copy" />
+
+***error***
+<InputField message="Error message" error />
+
+***disabled***
+<InputField placeholder="Disabled field" disabled />
+
+
+<!-- Select field -->
+## Select Field
+<Props of={ SelectField } />
+
+### Basic use
+<Playground>
+    <SelectField data={ ['one', 'two', 'three'] } />
+</Playground>
+
+### Select Field Examples
+
+***onChange***
+<SelectField data={ ['one', 'two', 'three'] } onChange={ () => alert('Changed') } />
+
+***label***
+<SelectField data={ ['one', 'two', 'three'] } label="Label copy" />
+
+***information***
+<SelectField data={ ['one', 'two', 'three'] } message="Information copy" />
+
+***error***
+<SelectField data={ ['one', 'two', 'three'] } message="Error message" error />
+
+***disabled***
+<SelectField data={ ['one', 'two', 'three'] } placeholder="Disabled field" disabled />

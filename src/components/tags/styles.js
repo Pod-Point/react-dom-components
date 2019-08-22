@@ -1,5 +1,5 @@
 const baseStyles = (
-    "inline-block px-2 rounded text-center font-sans text-xs uppercase"
+    'inline-block px-2 rounded text-center font-sans text-xs uppercase'
 );
 
 const primaryStyles = (
@@ -7,11 +7,11 @@ const primaryStyles = (
 );
 
 const secondaryStyles = (
-    'bg-transparent text-gray-primary border-solid border border-gray-primary'
+    'bg-transparent text-grey-primary border-solid border border-grey-primary'
 );
 
 export {
     baseStyles,
     primaryStyles,
     secondaryStyles,
-}
+};

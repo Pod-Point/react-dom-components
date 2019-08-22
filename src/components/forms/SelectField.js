@@ -4,16 +4,19 @@ import FieldLabel from './FieldLabel';
 import FieldInformation from './FieldInformation';
 import * as styles from './styles';
 
-function InputField({
+function SelectField({
     placeholder,
     label,
     message,
     disabled,
     error,
     classList,
+    data,
+    onChange,
 }) {
-    const inputClasses = classNames(
+    const selectClasses = classNames(
         styles.inputBaseStyles,
+        styles.selectFieldBaseStyles,
         disabled && 'bg-grey-2',
         error && 'border-red-primary',
         classList,
@@ -22,15 +25,18 @@ function InputField({
     return (
         <>
             <FieldLabel text={ label } />
-            <input
+            <select
                 type="text"
-                class={ inputClasses }
+                class={ selectClasses }
                 placeholder={ placeholder }
                 disabled={ disabled }
-            />
+                onChange={ onChange }
+            >
+                { data.map(option => <option>{ option }</option>) }
+            </select>
             <FieldInformation text={ message } error={ error } />
         </>
     );
 }
 
-export default InputField;
+export default SelectField;
