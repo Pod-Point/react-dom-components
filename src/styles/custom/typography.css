@@ -1,0 +1,34 @@
+/* typography */
+h1 {
+    @apply text-2xl;
+}
+
+@screen md {
+    h1 {
+        @apply text-xl;
+    }
+}
+
+h2 {
+    @apply text-xl;
+}
+
+@screen md {
+    h2 {
+        @apply text-lg;
+    }
+}
+
+h3 {
+    @apply text-lg;
+}
+
+@screen md {
+    h3 {
+        @apply text-base;
+    }
+}
+
+h4 {
+    @apply text-base;
+}

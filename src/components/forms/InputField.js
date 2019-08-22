@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import * as styles from './styles';
 
 function InputField({
@@ -11,7 +10,7 @@ function InputField({
             class={ styles.inputBaseStyles }
             placeholder={ placeholder }
         />
-    )
+    );
 }
 
 export default InputField;

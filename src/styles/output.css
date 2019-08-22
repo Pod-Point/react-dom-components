@@ -4727,6 +4727,42 @@ body {
   font-family: Quicksand, sans-serif;
 }
 
+/* typography */
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.125rem;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

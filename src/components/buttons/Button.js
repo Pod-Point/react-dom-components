@@ -16,23 +16,23 @@ function Button({
 
     switch (type) {
         case 'primary':
-            typeStyles = styles.primaryStyles
+            typeStyles = styles.primaryStyles;
             break;
         case 'secondary':
-            typeStyles = styles.secondaryStyles
+            typeStyles = styles.secondaryStyles;
             break;
         default:
-            typeStyles = null
+            typeStyles = null;
     }
 
-    var classes = classNames(
+    const classes = classNames(
         styles.baseStyles,
         typeStyles && typeStyles.baseStyles,
-        small ?
-            `${ styles.smallStyles.pY } ${ styles.smallStyles.fontSize }` :
-            `${ styles.defaultStyles.pY } ${ styles.defaultStyles.fontSize }`,
+        small
+            ? `${styles.smallStyles.pY} ${styles.smallStyles.fontSize}`
+            : `${styles.defaultStyles.pY} ${styles.defaultStyles.fontSize}`,
         fullwidth && 'w-full',
-        !disabled && `hover:${ bgHoverClass ? bgHoverClass : typeStyles.bgHover }`,
+        !disabled && `hover:${bgHoverClass || typeStyles.bgHover}`,
         disabled && 'cursor-default',
         classList,
     );
@@ -41,7 +41,7 @@ function Button({
         <button class={ classes } onClick={ onClick } disabled={ disabled }>
             { title }
         </button>
-    )
+    );
 }
 
 export default Button;

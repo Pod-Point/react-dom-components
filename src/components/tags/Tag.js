@@ -11,16 +11,16 @@ function Tag({
 
     switch (type) {
         case 'primary':
-            typeStyles = styles.primaryStyles
+            typeStyles = styles.primaryStyles;
             break;
         case 'secondary':
-            typeStyles = styles.secondaryStyles
+            typeStyles = styles.secondaryStyles;
             break;
         default:
-            typeStyles = null
+            typeStyles = null;
     }
 
-    var classes = classNames(
+    const classes = classNames(
         styles.baseStyles,
         typeStyles,
         classList,
@@ -30,7 +30,7 @@ function Tag({
         <div class={ classes }>
             { title }
         </div>
-    )
+    );
 }
 
 export default Tag;
