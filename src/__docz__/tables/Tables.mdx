@@ -1,0 +1,47 @@
+---
+name: Tables
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Table from "../../components/tables/Table";
+import TableHeader from "../../components/tables/TableHeader";
+import TableRow from "../../components/tables/TableRow";
+import '../../styles/output.css';
+
+# Tables
+Table components
+
+## Table
+<Props of={ Table } />
+
+### Basic use
+<Playground>
+    <Table
+        headings={[
+            'header one',
+            'header two',
+            'header three',
+        ]}
+        rowData={[
+            'Row one Column one',
+            'Row one Column two',
+            'Row one Column three',
+        ]}
+    />
+</Playground>
+
+
+## TableHeader
+<Props of={ TableHeader } />
+
+### Basic use
+<Playground>
+    <TableHeader
+        headings={[
+            'header one',
+            'header two',
+            'header three',
+        ]}
+    />
+</Playground>
