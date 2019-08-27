@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
-import FieldInformation from './FieldInformation';
+import FieldMessage from './FieldMessage';
 import * as styles from './styles';
 
 function SelectField({
@@ -24,8 +24,11 @@ function SelectField({
 
     return (
         <>
-            <FieldLabel text={ label } />
-            <div class="inline-block relative w-64">
+            <FieldLabel
+                text={ label }
+                classList="mb-2"
+            />
+            <div class="relative">
                 <select
                     type="text"
                     class={ selectClasses }
@@ -39,7 +42,11 @@ function SelectField({
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7"><path d="M 12 1 L 1 1 L 6.5 6.5 L 12 1 L 6.5 6.5" fill="rgb(25, 25, 26)" stroke="rgb(25, 25, 26)" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 </div>
             </div>
-            <FieldInformation text={ message } error={ error } />
+            <FieldMessage
+                text={ message }
+                error={ error }
+                classList="mt-2"
+            />
         </>
     );
 }

@@ -9,7 +9,8 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "tailwindcss": "^1.1.2"
+    "tailwindcss": "^1.1.2",
+    "@tailwindcss/custom-forms": "^0.2.0"
   },
   "scripts": {
     "watch:tailwind": "postcss src/styles/styles.css -o src/styles/output.css -w",

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
-import FieldInformation from './FieldInformation';
+import FieldMessage from './FieldMessage';
 import * as styles from './styles';
 
 function InputField({
@@ -14,6 +14,7 @@ function InputField({
 }) {
     const inputClasses = classNames(
         styles.inputBaseStyles,
+        styles.textInputBaseStyles,
         disabled && 'bg-grey-2',
         error && 'border-red-primary',
         classList,
@@ -21,14 +22,21 @@ function InputField({
 
     return (
         <>
-            <FieldLabel text={ label } />
+            <FieldLabel
+                text={ label }
+                classList="mb-2"
+            />
             <input
                 type="text"
                 class={ inputClasses }
                 placeholder={ placeholder }
                 disabled={ disabled }
             />
-            <FieldInformation text={ message } error={ error } />
+            <FieldMessage
+                text={ message }
+                error={ error }
+                classList="mt-2"
+            />
         </>
     );
 }

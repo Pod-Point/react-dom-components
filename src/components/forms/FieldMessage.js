@@ -8,7 +8,7 @@ function FieldInformation({
     classList,
 }) {
     const classes = classNames(
-        styles.fieldInformationBaseStyles,
+        styles.fieldMessageBaseStyles,
         error && 'text-red-primary',
         classList,
     );

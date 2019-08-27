@@ -6,6 +6,7 @@ menu: Components
 import { Playground, Props } from 'docz';
 import InputField from "../../components/forms/InputField";
 import SelectField from "../../components/forms/SelectField";
+import CheckboxField from "../../components/forms/CheckboxField";
 import '../../styles/output.css';
 
 # Forms Fields
@@ -62,3 +63,29 @@ Form components used to link internally
 
 ***disabled***
 <SelectField data={ ['one', 'two', 'three'] } placeholder="Disabled field" disabled />
+
+<!-- Checkbox field -->
+## Checkbox Field
+<Props of={ InputField } />
+
+### Basic use
+<Playground>
+    <CheckboxField
+        label="Checkbox copy"
+    />
+</Playground>
+
+### Checkbox Field Examples
+
+***checked***
+<CheckboxField
+    label="Checkbox copy"
+    checked
+/>
+
+***error***
+<CheckboxField
+    label="Checkbox error"
+    checked
+    error
+/>

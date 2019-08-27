@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 module.exports = {
     prefix: '',
     important: false,
@@ -189,5 +190,7 @@ module.exports = {
         zIndex: ['responsive'],
     },
     corePlugins: {},
-    plugins: [],
-}
+    plugins: [
+        require('@tailwindcss/custom-forms'),
+    ],
+};

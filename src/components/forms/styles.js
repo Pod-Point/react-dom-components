@@ -1,22 +1,32 @@
 const inputBaseStyles = (
-    'appearance-none border border-grey-1 rounded w-full py-3 px-3 text-grey-dark leading-tight focus:outline-none focus:border-grey-dark'
+    'appearance-none border border-grey-1 rounded py-3 px-3 leading-tight focus:outline-none focus:shadow-none focus:border-grey-dark'
+);
+
+const textInputBaseStyles = (
+    'w-full text-grey-dark'
 );
 
 const fieldLabelBaseStyles = (
-    'text-sm mb-2'
+    'w-full text-sm'
 );
 
-const fieldInformationBaseStyles = (
-    'text-xs my-2'
+const fieldMessageBaseStyles = (
+    'w-full text-xs my-2'
 );
 
 const selectFieldBaseStyles = (
-    'bg-white'
+    'w-full bg-white text-grey-dark'
+);
+
+const checkboxFieldBaseStyles = (
+    'mr-2 text-green-primary'
 );
 
 export {
-    fieldLabelBaseStyles,
-    fieldInformationBaseStyles,
     inputBaseStyles,
+    textInputBaseStyles,
+    fieldLabelBaseStyles,
+    fieldMessageBaseStyles,
     selectFieldBaseStyles,
+    checkboxFieldBaseStyles,
 };
