@@ -1,5 +1,5 @@
 const baseStyles = (
-    'px-6 rounded text-center'
+    'px-6 rounded text-center focus:outline-none'
 );
 
 const defaultStyles = {

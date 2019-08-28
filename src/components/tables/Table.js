@@ -21,9 +21,27 @@ function Table({
         <table class={ classes }>
             <TableHeader headings={ headings } />
             <tbody>
-                <TableRow rowData={ rowData } />
-                <TableRow rowData={ rowData } selected />
-                <TableRow rowData={ rowData } />
+                <tr class="bg-green-1">
+                    <td colspan="3">
+                        <table class="w-full">
+                            <TableRow rowData={ rowData } />
+                        </table>
+                    </td>
+                </tr>
+                <tr class="bg-green-1">
+                    <td colspan="3">
+                        <table class="w-full">
+                            <TableRow rowData={ rowData } />
+                        </table>
+                    </td>
+                </tr>
+                <tr class="bg-green-1">
+                    <td colspan="3">
+                        <table class="w-full">
+                            <TableRow rowData={ rowData } />
+                        </table>
+                    </td>
+                </tr>
             </tbody>
         </table>
     );

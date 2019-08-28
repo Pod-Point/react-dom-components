@@ -57,11 +57,6 @@ module.exports = {
                 'monospace',
             ],
         },
-        height: {
-            auto: 'auto',
-            full: '100%',
-            screen: '100vh',
-        },
         placeholderColor: theme => theme('colors.grey.1'),
         width: theme => ({
             auto: 'auto',
