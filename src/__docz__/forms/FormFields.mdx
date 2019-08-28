@@ -3,6 +3,7 @@ name: Form Fields
 menu: Components
 ---
 
+import { PureComponent } from 'react';
 import { Playground, Props } from 'docz';
 import InputField from "../../components/forms/InputField";
 import SelectField from "../../components/forms/SelectField";
@@ -73,6 +74,38 @@ Form components used to link internally
     <CheckboxField
         label="Checkbox copy"
     />
+</Playground>
+
+### With parent component
+<Playground>
+    {
+        class Parent extends PureComponent {
+            constructor() {
+                super()
+                this.state = { checked: false }
+
+                this.handleChange = this.handleChange.bind(this);
+            }
+
+            handleChange() {
+                const { checked } = this.state;
+
+                this.setState({
+                    checked: !checked,
+                }, alert(`Changed, checked state is: ${ checked }`))
+            }
+
+            render() {
+                return (
+                    <CheckboxField
+                        label="Checkbox copy"
+                        checked={ this.state.checked }
+                        onChange={ this.handleChange }
+                    />
+                )
+            }
+        }
+    }
 </Playground>
 
 ### Checkbox Field Examples

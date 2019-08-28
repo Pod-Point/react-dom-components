@@ -30,7 +30,7 @@ class TableRow extends PureComponent {
 
         const classes = classNames(
             columnBaseClasses,
-            selected && 'bg-grey-2'
+            selected && 'bg-grey-4'
         );
 
         return (
