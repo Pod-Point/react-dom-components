@@ -1,0 +1,22 @@
+.toggle-switch {
+    @apply absolute cursor-pointer inset-0 bg-grey-primary rounded-full;
+    transition: .2s;
+}
+
+.toggle-switch:before {
+    @apply absolute bg-white rounded-full;
+    content: "";
+    height: calc(100% - 4px);
+    width: 50%;
+    left: 2px;
+    bottom: 2px;
+    transition: .2s;
+}
+
+input:checked + .toggle-switch {
+    @apply bg-green-primary;
+}
+
+input:checked + .toggle-switch:before {
+    left: calc(50% - 2px);
+}

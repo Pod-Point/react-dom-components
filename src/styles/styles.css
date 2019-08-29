@@ -4,3 +4,5 @@
 
 @import './custom/base.css';
 @import './custom/typography.css';
+
+@import './custom/forms/toggle-switch.css';

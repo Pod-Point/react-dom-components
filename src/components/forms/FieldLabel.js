@@ -14,9 +14,9 @@ function FieldLabel({
     );
 
     return (
-        <p type="text" class={ labelClasses }>
+        <label type="text" class={ labelClasses }>
             { text }
-        </p>
+        </label>
     );
 }
 

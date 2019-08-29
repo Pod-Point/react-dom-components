@@ -8,6 +8,7 @@ import { Playground, Props } from 'docz';
 import InputField from "../../../components/forms/InputField";
 import SelectField from "../../../components/forms/SelectField";
 import CheckboxField from "../../../components/forms/CheckboxField";
+import ToggleSwitch from "../../../components/forms/ToggleSwitch";
 import '../../../styles/output.css';
 
 # Forms Fields
@@ -92,7 +93,7 @@ Form components used to link internally
 
                 this.setState({
                     checked: !checked,
-                }, alert(`Changed, checked state is: ${ checked }`))
+                }, alert(`Changed, checked state is currently ${ checked }`))
             }
 
             render() {
@@ -122,3 +123,57 @@ Form components used to link internally
     checked
     error
 />
+
+<!-- ToggleSwitch field -->
+## Toggle Switch Field
+<Props of={ ToggleSwitch } />
+
+### Basic use
+<Playground>
+    <ToggleSwitch />
+</Playground>
+
+### Toggle Switch Examples
+
+***label***
+<ToggleSwitch
+    label="Label copy"
+    checked={ false }
+/>
+
+***onChange***
+<ToggleSwitch
+    onChange={ () => alert('Changed') }
+    checked={ false }
+/>
+
+### With parent component
+<Playground>
+    {
+        class Parent extends PureComponent {
+            constructor() {
+                super()
+                this.state = { checked: false }
+
+                this.handleChange = this.handleChange.bind(this);
+            }
+
+            handleChange() {
+                const { checked } = this.state;
+
+                this.setState({
+                    checked: !checked,
+                }, alert(`Changed, checked state is currently ${ checked }`))
+            }
+
+            render() {
+                return (
+                    <ToggleSwitch
+                        checked={ this.state.checked }
+                        onChange={ this.handleChange }
+                    />
+                )
+            }
+        }
+    }
+</Playground>

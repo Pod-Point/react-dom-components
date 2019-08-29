@@ -26,11 +26,12 @@ function CheckboxField({
                 onChange={ onChange }
                 checked={ checked }
             />
-            <FieldLabel
+            { label && <FieldLabel
                 text={ label }
                 classList="flex-1"
                 error={ error }
             />
+            }
         </div>
     );
 }
