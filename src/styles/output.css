@@ -5279,19 +5279,19 @@ h4 {
   position: absolute;
   background-color: #fff;
   border-radius: 9999px;
+  width: 50%;
   content: "";
   height: calc(100% - 4px);
-  width: 50%;
   left: 2px;
   bottom: 2px;
   transition: .2s;
 }
 
-input:checked + .toggle-switch {
+.toggle-switch-active {
   background-color: #8FC043;
 }
 
-input:checked + .toggle-switch:before {
+.toggle-switch-active:before {
   left: calc(50% - 2px);
 }
 

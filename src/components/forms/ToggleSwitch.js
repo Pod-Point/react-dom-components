@@ -14,6 +14,11 @@ function ToggleSwitch({
         wrapperBaseStyles,
     );
 
+    const switchClasses = classNames(
+        'toggle-switch',
+        active && 'toggle-switch-active',
+    );
+
     return (
         <div class="flex">
             <label class={ wrapperClasses }>
@@ -23,7 +28,7 @@ function ToggleSwitch({
                     checked={ active }
                     onChange={ onChange }
                 />
-                <span class='toggle-switch'></span>
+                <span class={ switchClasses }></span>
             </label>
             { label && <FieldLabel
                 text={ label }
