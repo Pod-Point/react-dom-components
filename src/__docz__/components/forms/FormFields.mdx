@@ -156,23 +156,23 @@ Form components used to link internally
         class Parent extends PureComponent {
             constructor() {
                 super()
-                this.state = { checked: false }
+                this.state = { active: false }
 
                 this.handleChange = this.handleChange.bind(this);
             }
 
             handleChange() {
-                const { checked } = this.state;
+                const { active } = this.state;
 
                 this.setState({
-                    checked: !checked,
-                }, alert(`Changed, checked state is currently ${ checked }`))
+                    active: !active,
+                }, alert(`Changed, active state is currently ${ active }`))
             }
 
             render() {
                 return (
                     <ToggleSwitch
-                        checked={ this.state.checked }
+                        active={ this.state.active }
                         onChange={ this.handleChange }
                     />
                 )

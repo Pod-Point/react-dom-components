@@ -20,29 +20,9 @@ function Table({
     return (
         <table class={ classes }>
             <TableHeader headings={ headings } />
-            <tbody>
-                <tr class="bg-green-1">
-                    <td colspan="3">
-                        <table class="w-full">
-                            <TableRow rowData={ rowData } />
-                        </table>
-                    </td>
-                </tr>
-                <tr class="bg-green-1">
-                    <td colspan="3">
-                        <table class="w-full">
-                            <TableRow rowData={ rowData } />
-                        </table>
-                    </td>
-                </tr>
-                <tr class="bg-green-1">
-                    <td colspan="3">
-                        <table class="w-full">
-                            <TableRow rowData={ rowData } />
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
+            {
+                rowData.map((data, key) => <TableRow key={ `row-${key}` } rowData={ data } />)
+            }
         </table>
     );
 }

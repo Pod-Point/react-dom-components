@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
+import TableColumn from './TableColumn';
 
 class TableRow extends PureComponent {
     constructor(props) {
@@ -24,19 +25,14 @@ class TableRow extends PureComponent {
         const { selected } = this.state;
         const { rowData } = this.props;
 
-        const columnBaseClasses = (
-            'py-2 text-left cursor-pointer'
-        );
-
         const classes = classNames(
-            columnBaseClasses,
             selected && 'bg-grey-4'
         );
 
         return (
-            <tr class="w-full" onClick={ this.handleRowSelect }>
+            <tr class="w-full cursor-pointer" onClick={ this.handleRowSelect }>
                 {
-                    rowData.map(data => <td class={ classes }>{ data }</td>)
+                    rowData.map(data => <TableColumn classList={ classes }>{ data }</TableColumn>)
                 }
             </tr>
         );
