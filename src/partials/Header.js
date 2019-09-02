@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../components/layout/Container';
-import Button from '../components/buttons/Button';
+import Button from '../components/buttons/Button.tsx';
 import IconInitials from '../components/icons/IconInitials';
 
 function Header({

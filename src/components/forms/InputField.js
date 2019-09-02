@@ -21,7 +21,7 @@ function InputField({
     );
 
     return (
-        <>
+        <div>
             <FieldLabel
                 text={ label }
                 classList="mb-2"
@@ -37,7 +37,7 @@ function InputField({
                 error={ error }
                 classList="mt-2"
             />
-        </>
+        </div>
     );
 }
 

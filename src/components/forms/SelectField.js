@@ -23,7 +23,7 @@ function SelectField({
     );
 
     return (
-        <>
+        <div>
             <FieldLabel
                 text={ label }
                 classList="mb-2"
@@ -47,7 +47,7 @@ function SelectField({
                 error={ error }
                 classList="mt-2"
             />
-        </>
+        </div>
     );
 }
 

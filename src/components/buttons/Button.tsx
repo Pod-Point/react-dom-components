@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import ButtonProps from '../../interfaces/buttons/Button';
 import classNames from 'classnames';
 import * as styles from './styles';
 
-function Button({
+const Button: FunctionComponent<ButtonProps> = ({
     type,
     title,
     fullwidth,
@@ -11,7 +12,7 @@ function Button({
     onClick,
     classList,
     bgHoverClass,
-}) {
+}) => {
     let typeStyles;
 
     switch (type) {
@@ -38,7 +39,7 @@ function Button({
     );
 
     return (
-        <button class={ classes } onClick={ onClick } disabled={ disabled }>
+        <button className={ classes } onClick={ onClick } disabled={ disabled }>
             { title }
         </button>
     );
