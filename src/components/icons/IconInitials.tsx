@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import IconInitialsProps from '../../interfaces/components/icons/IconInitials';
 import classNames from 'classnames';
 
-function IconInitials({
+const IconInitials: FunctionComponent<IconInitialsProps> = ({
     initials,
     bgColour,
     textColour,
     classList,
     size,
-}) {
+}) => {
     const baseStyles = (
         'rounded-full text-xs text-center leading-loose'
     );
@@ -21,7 +22,7 @@ function IconInitials({
     );
 
     return (
-        <div class={ classes }>
+        <div className={ classes }>
             { initials }
         </div>
     );

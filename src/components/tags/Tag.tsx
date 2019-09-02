@@ -27,7 +27,7 @@ function Tag({
     );
 
     return (
-        <div class={ classes }>
+        <div className={ classes }>
             { title }
         </div>
     );

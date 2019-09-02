@@ -12,7 +12,7 @@ function TableColumn({
     );
 
     return (
-        <td class={ classes }>
+        <td className={ classes }>
             { children }
         </td>
     );

@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import FieldLabelProps from '../../interfaces/forms/FieldLabel';
+import FieldLabelProps from '../../interfaces/components/forms/FieldLabel';
 import classNames from 'classnames';
 import * as styles from './styles';
 

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import ContainerProps from '../../interfaces/components/layout/Container';
 import classNames from 'classnames';
 
-function Container({
+const Container: FunctionComponent<ContainerProps> = ({
     children,
     classList,
-}) {
+}) => {
     const baseStyles = 'container mx-auto px-2 flex content-center';
 
     const classes = classNames(
@@ -13,7 +14,7 @@ function Container({
     );
 
     return (
-        <div class={ classes }>
+        <div className={ classes }>
             { children }
         </div>
     );

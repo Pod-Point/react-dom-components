@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import ToggleSwitchProps from '../../interfaces/forms/ToggleSwitch';
+import ToggleSwitchProps from '../../interfaces/components/forms/ToggleSwitch';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 

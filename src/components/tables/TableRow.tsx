@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
+import { TableRowProps, TableRowState } from '../../interfaces/components/tables/TableRow';
 import classNames from 'classnames';
 import TableColumn from './TableColumn';
 
-class TableRow extends PureComponent {
+class TableRow extends PureComponent<TableRowProps, TableRowState> {
     constructor(props) {
         super(props);
 
@@ -30,7 +31,7 @@ class TableRow extends PureComponent {
         );
 
         return (
-            <tr class="w-full cursor-pointer" onClick={ this.handleRowSelect }>
+            <tr className="w-full cursor-pointer" onClick={ this.handleRowSelect }>
                 {
                     rowData.map(data => <TableColumn classList={ classes }>{ data }</TableColumn>)
                 }

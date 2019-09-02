@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import FieldMessageProps from '../../interfaces/forms/FieldMessage';
+import FieldMessageProps from '../../interfaces/components/forms/FieldMessage';
 import classNames from 'classnames';
 import * as styles from './styles';
 

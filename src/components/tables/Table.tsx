@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import TableProps from '../../interfaces/components/tables/Table'
 import classNames from 'classnames';
 import TableHeader from "./TableHeader";
 import TableRow from "./TableRow";
 
-function Table({
+const Table: FunctionComponent<TableProps> = ({
     headings,
     rowData,
     classList,
-}) {
+}) => {
     const baseClasses = (
         'w-full'
     );
@@ -18,7 +19,7 @@ function Table({
     );
 
     return (
-        <table class={ classes }>
+        <table className={ classes }>
             <TableHeader headings={ headings } />
             {
                 rowData.map((data, key) => <TableRow key={ `row-${key}` } rowData={ data } />)

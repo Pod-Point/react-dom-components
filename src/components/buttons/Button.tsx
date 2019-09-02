@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import ButtonProps from '../../interfaces/buttons/Button';
+import ButtonProps from '../../interfaces/components/buttons/Button';
 import classNames from 'classnames';
 import * as styles from './styles';
 

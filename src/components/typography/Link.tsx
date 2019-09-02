@@ -17,7 +17,7 @@ function Button({
     );
 
     return (
-        <a class={ classes } href={ url } target={ external && '_blank' }>
+        <a className={ classes } href={ url } target={ external && '_blank' }>
             { title }
         </a>
     );

@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import SelectFieldProps from '../../interfaces/forms/SelectField';
+import SelectFieldProps from '../../interfaces/components/forms/SelectField';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 import FieldMessage from './FieldMessage';

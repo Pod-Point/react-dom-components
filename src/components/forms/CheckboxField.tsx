@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import CheckboxProps from '../../interfaces/forms/Checkbox';
+import CheckboxProps from '../../interfaces/components/forms/Checkbox';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 import * as styles from './styles';

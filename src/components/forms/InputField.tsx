@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import InputFieldProps from '../../interfaces/forms/InputField';
+import InputFieldProps from '../../interfaces/components/forms/InputField';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 import FieldMessage from './FieldMessage';
