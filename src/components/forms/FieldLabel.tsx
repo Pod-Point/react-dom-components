@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import FieldLabelProps from '../../interfaces/forms/FieldLabel';
 import classNames from 'classnames';
 import * as styles from './styles';
 
-function FieldLabel({
+const FieldLabel: FunctionComponent<FieldLabelProps> = ({
     text,
     classList,
     error,
-}) {
+}) => {
     const labelClasses = classNames(
         styles.fieldLabelBaseStyles,
         classList,
@@ -14,7 +15,7 @@ function FieldLabel({
     );
 
     return (
-        <label type="text" class={ labelClasses }>
+        <label className={ labelClasses }>
             { text }
         </label>
     );

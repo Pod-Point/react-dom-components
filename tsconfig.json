@@ -1,19 +1,23 @@
 {
     "compilerOptions": {
-      "declaration": true,
-      "lib": [
-        "es2015"
-      ],
-      "target": "es2015",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "outDir": "lib",
-      "sourceMap": true
+        "declaration": true,
+        "lib": [
+            "es2015"
+        ],
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "lib",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": false,
+        "noEmit": true
     },
     "include": [
-      "src/**/*"
+        "src/**/*"
     ],
     "exclude": [
-      "**/__tests__"
+        "**/__tests__"
     ]
   }

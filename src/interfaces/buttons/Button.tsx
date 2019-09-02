@@ -1,10 +1,10 @@
 export default interface ButtonProps {
-    type: 'primary' | 'secondary',
+    type?: 'primary' | 'secondary',
     title: string,
-    fullwidth: boolean,
-    small: boolean,
-    disabled: boolean,
+    fullwidth?: boolean,
+    small?: boolean,
+    disabled?: boolean,
     onClick: any,
-    classList: string,
-    bgHoverClass: string,
+    classList?: string,
+    bgHoverClass?: string,
 }

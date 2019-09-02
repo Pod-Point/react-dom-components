@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import InputFieldProps from '../../interfaces/forms/InputField';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 import FieldMessage from './FieldMessage';
 import * as styles from './styles';
 
-function InputField({
+const InputField: FunctionComponent<InputFieldProps> = ({
     placeholder,
     label,
     message,
     disabled,
     error,
     classList,
-}) {
+}) => {
     const inputClasses = classNames(
         styles.inputBaseStyles,
         styles.textInputBaseStyles,
@@ -28,7 +29,7 @@ function InputField({
             />
             <input
                 type="text"
-                class={ inputClasses }
+                className={ inputClasses }
                 placeholder={ placeholder }
                 disabled={ disabled }
             />

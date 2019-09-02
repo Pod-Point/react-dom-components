@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import ToggleSwitchProps from '../../interfaces/forms/ToggleSwitch';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 
-function ToggleSwitch({
+const ToggleSwitch: FunctionComponent<ToggleSwitchProps> = ({
     label,
     active,
     onChange,
-}) {
+}) => {
     const wrapperBaseStyles = 'inline-block relative w-10 h-6 mr-2';
     const checkboxBaseStyles = 'w-0 h-0 opacity-0';
 
@@ -20,15 +21,15 @@ function ToggleSwitch({
     );
 
     return (
-        <div class="flex">
-            <label class={ wrapperClasses }>
+        <div className="flex">
+            <label className={ wrapperClasses }>
                 <input
                     type="checkbox"
-                    class={ checkboxBaseStyles }
+                    className={ checkboxBaseStyles }
                     checked={ active }
                     onChange={ onChange }
                 />
-                <span class={ switchClasses }></span>
+                <span className={ switchClasses }></span>
             </label>
             { label && <FieldLabel
                 text={ label }

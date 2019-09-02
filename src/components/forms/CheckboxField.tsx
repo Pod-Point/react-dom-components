@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import CheckboxProps from '../../interfaces/forms/Checkbox';
 import classNames from 'classnames';
 import FieldLabel from './FieldLabel';
 import * as styles from './styles';
 
-function CheckboxField({
+const CheckboxField: FunctionComponent<CheckboxProps> = ({
     label,
     error,
     classList,
     onChange,
     checked,
-}) {
+}) => {
     const checkboxClasses = classNames(
         'form-checkbox',
         styles.inputBaseStyles,
@@ -19,10 +20,10 @@ function CheckboxField({
     );
 
     return (
-        <div class="flex">
+        <div className="flex">
             <input
                 type="checkbox"
-                class={ checkboxClasses }
+                className={ checkboxClasses }
                 onChange={ onChange }
                 checked={ checked }
             />
@@ -30,8 +31,7 @@ function CheckboxField({
                 text={ label }
                 classList="flex-1"
                 error={ error }
-            />
-            }
+            /> }
         </div>
     );
 }
