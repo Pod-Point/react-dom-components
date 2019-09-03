@@ -11,7 +11,6 @@ const Button: FunctionComponent<ButtonProps> = ({
     disabled,
     onClick,
     classList,
-    bgHoverClass,
 }) => {
     let typeStyles;
 
@@ -33,7 +32,7 @@ const Button: FunctionComponent<ButtonProps> = ({
             ? `${styles.smallStyles.pY} ${styles.smallStyles.fontSize}`
             : `${styles.defaultStyles.pY} ${styles.defaultStyles.fontSize}`,
         fullwidth && 'w-full',
-        !disabled && `hover:${bgHoverClass || typeStyles.bgHover}`,
+        disabled && `bg-grey-1 hover:bg-grey-1`,
         disabled && 'cursor-default',
         classList,
     );

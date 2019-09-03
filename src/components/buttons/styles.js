@@ -8,13 +8,11 @@ const defaultStyles = {
 };
 
 const primaryStyles = {
-    baseStyles: 'bg-green-primary text-white',
-    bgHover: 'bg-green-1',
+    baseStyles: 'bg-green-primary text-white hover:bg-green-1',
 };
 
 const secondaryStyles = {
-    baseStyles: 'bg-transparent text-grey-primary border-grey-primary border-solid border rounded-md',
-    bgHover: 'bg-grey-2',
+    baseStyles: 'bg-transparent text-grey-primary border-grey-primary border-solid border rounded-md hover:bg-grey-2',
 };
 
 const smallStyles = {

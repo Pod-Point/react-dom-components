@@ -6,5 +6,4 @@ export default interface ButtonProps {
     disabled?: boolean,
     onClick: any,
     classList?: string,
-    bgHoverClass?: string,
 }
