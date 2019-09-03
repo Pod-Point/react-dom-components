@@ -6,6 +6,8 @@ import FieldMessage from './FieldMessage';
 import * as styles from './styles';
 
 const InputField: FunctionComponent<InputFieldProps> = ({
+    id,
+    type,
     placeholder,
     label,
     message,
@@ -28,7 +30,8 @@ const InputField: FunctionComponent<InputFieldProps> = ({
                 classList="mb-2"
             />
             <input
-                type="text"
+                id={ id }
+                type={ type || 'text' }
                 className={ inputClasses }
                 placeholder={ placeholder }
                 disabled={ disabled }
