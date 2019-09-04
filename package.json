@@ -18,8 +18,8 @@
     "typescript": "^3.6.2"
   },
   "scripts": {
-    "watch:tailwind": "postcss src/styles/styles.css -o src/styles/output.css -w",
-    "build:tailwind": "postcss src/styles/styles.css -o src/styles/output.css",
+    "tailwind:watch": "postcss src/styles/styles.css -o src/styles/output.css -w",
+    "tailwind:build": "postcss src/styles/styles.css -o src/styles/output.css",
     "start": "react-scripts start & watch:tailwind",
     "build": "react-scripts build && build:tailwind",
     "test": "react-scripts test",
