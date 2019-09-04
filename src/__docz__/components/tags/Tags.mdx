@@ -10,7 +10,7 @@ import '../../../styles/output.css';
 # Tags
 Documentation and examples for tag component. <br />
 
-There are a couple of predefined tags types (_primary and secondary_), providing consistency. <br />
+There are a couple of predefined tags 'kinds' (_primary and secondary_), providing consistency. <br />
 Tailwind classes can be passed via the _classList_ prop to create custom tag styles.
 
 ## Tag
@@ -18,14 +18,14 @@ Tailwind classes can be passed via the _classList_ prop to create custom tag sty
 
 ### Basic use
 <Playground>
-    <Tag type="primary" title="Tag copy" />
+    <Tag kind="primary" title="Tag copy" />
 </Playground>
 
 ### Examples
 
 ***bgClass***
 <Tag
-    type="primary"
+    kind="primary"
     title="Tag copy"
     bgClass="bg-grey-dark"
     borderColourClass="border-grey-dark"
@@ -33,14 +33,14 @@ Tailwind classes can be passed via the _classList_ prop to create custom tag sty
 
 ***textColourClass***
 <Tag
-    type="primary"
+    kind="primary"
     title="Tag copy"
     textColourClass="text-black"
 />
 
 ***borderColourClass***
 <Tag
-    type="primary"
+    kind="primary"
     title="Tag copy"
     borderColourClass="border-black"
 />
@@ -48,7 +48,7 @@ Tailwind classes can be passed via the _classList_ prop to create custom tag sty
 ## Secondary Tag
 <Playground>
     <Tag
-        type="secondary"
+        kind="secondary"
         title="Secondary Tag copy"
     />
 </Playground>

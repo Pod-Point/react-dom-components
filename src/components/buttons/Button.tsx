@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import * as styles from './styles';
 
 const Button: FunctionComponent<ButtonProps> = ({
-    type,
+    kind,
     title,
     fullwidth,
     small,
@@ -12,22 +12,22 @@ const Button: FunctionComponent<ButtonProps> = ({
     onClick,
     classList,
 }) => {
-    let typeStyles;
+    let kindStyles;
 
-    switch (type) {
+    switch (kind) {
         case 'primary':
-            typeStyles = styles.primaryStyles;
+            kindStyles = styles.primaryStyles;
             break;
         case 'secondary':
-            typeStyles = styles.secondaryStyles;
+            kindStyles = styles.secondaryStyles;
             break;
         default:
-            typeStyles = null;
+            kindStyles = null;
     }
 
     const classes = classNames(
         styles.baseStyles,
-        typeStyles && typeStyles.baseStyles,
+        kindStyles && kindStyles.baseStyles,
         small
             ? `${styles.smallStyles.pY} ${styles.smallStyles.fontSize}`
             : `${styles.defaultStyles.pY} ${styles.defaultStyles.fontSize}`,

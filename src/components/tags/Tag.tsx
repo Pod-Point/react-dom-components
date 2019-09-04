@@ -3,26 +3,26 @@ import classNames from 'classnames';
 import * as styles from './styles';
 
 function Tag({
-    type,
+    kind,
     title,
     classList,
 }) {
-    let typeStyles;
+    let kindStyles;
 
-    switch (type) {
+    switch (kind) {
         case 'primary':
-            typeStyles = styles.primaryStyles;
+            kindStyles = styles.primaryStyles;
             break;
         case 'secondary':
-            typeStyles = styles.secondaryStyles;
+            kindStyles = styles.secondaryStyles;
             break;
         default:
-            typeStyles = null;
+            kindStyles = null;
     }
 
     const classes = classNames(
         styles.baseStyles,
-        typeStyles,
+        kindStyles,
         classList,
     );
 

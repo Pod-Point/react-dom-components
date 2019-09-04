@@ -62,7 +62,7 @@ but cause more pain than they cure when it comes time to make your site stand ou
 Tailwind is a utility-first CSS framework, therefore style elements by applying pre-existing classes directly in HTML tags. <br />
 For example:
 ```
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+<button class="bg-green-primary text-white px-6 rounded text-center hover:bg-green-1">
   Button
 </button>
 ```
@@ -78,7 +78,7 @@ These styles are built using [PostCSS](https://postcss.org/).
 
 
 ## Why Docz
-Docz is an easy to use documentation generator, which takes advantage of the MDX files which allows seamless use of JSX in markdown documents.
+Docz is an easy to use documentation generator, which takes advantage of MDX files alowing seamless use of JSX in markdown documents.
 - Zero config and easy to learn. No unnecessary build steps with confusing setups.
 - Blazing fast. Built with performance in mind from the start.
 - Easy to customize. Create something that will be easy to use and customize.
@@ -88,8 +88,30 @@ Docz is an easy to use documentation generator, which takes advantage of the MDX
 
 _<small>This library is using Docz version 1.2.0</small>_
 
+### Example Docz
+```
+---
+name: Buttons
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Button from "../../../components/buttons/Button";
+
+# Buttons
+<Props of={ Button } />
+
+### Basic use
+<Playground>
+    <Button
+        kind="primary"
+        title="Button"
+    />
+</Playground>
+```
+
 
 ## Modules
-A list of node modules used in this library:
+A list of third party enhancements used in this library:
 - [classnames](https://github.com/JedWatson/classnames) - Allows conditional styles
 - [@tailwindcss/custom-forms](https://github.com/tailwindcss/custom-forms/blob/master/README.md) - Applies pseudo checked styles for Tailwind

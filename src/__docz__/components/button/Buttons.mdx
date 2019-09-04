@@ -10,7 +10,7 @@ import '../../../styles/output.css';
 # Buttons
 Use button components for actions in forms, dialogs, and more with support for multiple sizes, states, etc. <br />
 
-There are a couple of predefined button types (_primary and secondary_), providing consistency. <br />
+There are a couple of predefined button 'kinds' (_primary and secondary_), providing consistency. <br />
 Tailwind classes can be passed via the _classList_ prop to create custom button styles.
 
 ## Primary Button
@@ -19,7 +19,7 @@ Tailwind classes can be passed via the _classList_ prop to create custom button 
 ### Basic use
 <Playground>
     <Button
-        type="primary"
+        kind="primary"
         title="Button"
     />
 </Playground>
@@ -28,28 +28,28 @@ Tailwind classes can be passed via the _classList_ prop to create custom button 
 
 ***onClick***
 <Button
-    type="primary"
+    kind="primary"
     title="Button"
     onClick={ () => alert('Clicked')}
 />
 
 ***small***
 <Button
-    type="primary"
+    kind="primary"
     title="Button"
     small
 />
 
 ***disabled***
 <Button
-    type="primary"
+    kind="primary"
     title="Button"
     disabled
 />
 
 ***fullwidth***
 <Button
-    type="primary"
+    kind="primary"
     title="Button"
     fullwidth
 />
@@ -57,7 +57,7 @@ Tailwind classes can be passed via the _classList_ prop to create custom button 
 ## Secondary Button
 <Playground>
     <Button
-        type="secondary"
+        kind="secondary"
         title="Secondary Button"
     />
 </Playground>

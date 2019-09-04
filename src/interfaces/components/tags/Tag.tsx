@@ -1,5 +1,5 @@
 export default interface TagProps {
-    type?: 'primary' | 'secondary',
+    kind?: 'primary' | 'secondary',
     title: string,
     classList?: string,
 }
