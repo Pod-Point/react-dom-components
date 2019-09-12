@@ -17,7 +17,7 @@ const Header: FunctionComponent<HeaderProps> = ({
                 </div>
                 <div className="py-2 flex-1 self-center">
                     <Button
-                        type="primary"
+                        kind="primary"
                         title="Add RFID Cards"
                         small
                         onClick={ false }

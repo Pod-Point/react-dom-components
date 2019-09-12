@@ -33,3 +33,8 @@ To build the TailwindCSS config or styles
 ```
 yarn run tailwind:build
 ```
+
+### Linters and IDE setup
+We use [Pod Point's React ESLint package](https://github.com/Pod-Point/eslint-config-podpoint-react) for React projects.
+For CSS pattern consistency, we use a third party package called ```stylelint```. This is required as we are using Tailwind's ```@apply``` method in the custom CSS files.
+To see how to set this up in VS Code, please refer to [this article.](https://www.meidev.co/blog/visual-studio-code-css-linting-with-tailwind/)

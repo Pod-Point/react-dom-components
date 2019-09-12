@@ -20,8 +20,8 @@
   "scripts": {
     "tailwind:watch": "postcss src/styles/styles.css -o src/styles/output.css -w",
     "tailwind:build": "postcss src/styles/styles.css -o src/styles/output.css",
-    "start": "react-scripts start & watch:tailwind",
-    "build": "react-scripts build && build:tailwind",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docz:dev": "docz dev",
@@ -44,12 +44,17 @@
   },
   "devDependencies": {
     "@pod-point/eslint-config-podpoint-base": "pod-point/eslint-config-podpoint-base",
+    "@pod-point/eslint-config-podpoint-react": "pod-point/eslint-config-podpoint-react",
+    "babel-eslint": "^10.0.3",
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
-    "eslint": "^6.2.1",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
     "postcss-cli": "^6.1.3",
-    "react-hot-loader": "^4.12.11"
+    "react-hot-loader": "^4.12.11",
+    "stylelint-config-recommended": "^2.2.0"
   }
 }
