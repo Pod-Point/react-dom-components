@@ -1,43 +1,31 @@
-import React, { PureComponent } from 'react';
-import { TableRowProps, TableRowState } from '../../interfaces/components/tables/TableRow';
+import React, { FunctionComponent } from 'react';
+import { TableRowProps } from '../../interfaces/components/tables/TableRow';
+import _ from 'lodash';
 import classNames from 'classnames';
 import TableColumn from './TableColumn';
 
-class TableRow extends PureComponent<TableRowProps, TableRowState> {
-    constructor(props) {
-        super(props);
+const TableRow: FunctionComponent<TableRowProps> = ({
+    rowData,
+    selected,
+    handleClick,
+}) => {
+    const classes = classNames(
+        selected && 'bg-grey-4'
+    );
 
-        this.state = {
-            selected: false,
-        };
-
-        this.handleRowSelect = this.handleRowSelect.bind(this);
-    }
-
-    handleRowSelect() {
-        const { selected } = this.state;
-
-        this.setState({
-            selected: !selected,
-        });
-    }
-
-    render() {
-        const { selected } = this.state;
-        const { rowData } = this.props;
-
-        const classes = classNames(
-            selected && 'bg-grey-4'
-        );
-
-        return (
-            <tr className="w-full cursor-pointer" onClick={ this.handleRowSelect }>
-                {
-                    rowData.map(data => <TableColumn classList={ classes }>{ data }</TableColumn>)
-                }
-            </tr>
-        );
-    }
+    return (
+        <tr className="w-full cursor-pointer" onClick={ handleClick }>
+            {
+                rowData.map(data =>
+                    <TableColumn
+                        classList={ classes }
+                        key={ _.uniqueId() }
+                    >
+                        { data }
+                    </TableColumn>)
+            }
+        </tr>
+    );
 }
 
 export default TableRow;

@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import classNames from 'classnames';
 import * as styles from './styles';
 
@@ -18,7 +19,7 @@ function TableHeader({
         <thead className="w-full">
             <tr className="w-full">
                 {
-                    headings.map(heading => <th className={ classes }>{ heading }</th>)
+                    headings.map(heading => <th className={ classes } key={ _.uniqueId() }>{ heading }</th>)
                 }
             </tr>
         </thead>
