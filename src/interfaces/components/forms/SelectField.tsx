@@ -6,4 +6,5 @@ export default interface SelectFieldProps {
     classList?: string,
     data: Array<string>,
     onChange: any,
+    selectedOption: string,
 }
