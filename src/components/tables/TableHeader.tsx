@@ -15,10 +15,10 @@ function TableHeader({
     );
 
     return (
-        <thead class="w-full">
-            <tr class="w-full">
+        <thead className="w-full">
+            <tr className="w-full">
                 {
-                    headings.map(heading => <th class={ classes }>{ heading }</th>)
+                    headings.map(heading => <th className={ classes }>{ heading }</th>)
                 }
             </tr>
         </thead>
