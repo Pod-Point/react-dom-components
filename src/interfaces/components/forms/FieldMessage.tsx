@@ -1,5 +1,5 @@
 export default interface FieldMessageProps {
-    text: string,
+    copy: string,
     classList?: string,
     error?: string,
 }

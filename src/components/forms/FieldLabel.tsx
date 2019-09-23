@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import * as styles from './styles';
 
 const FieldLabel: FunctionComponent<FieldLabelProps> = ({
-    text,
+    copy,
     classList,
     error,
 }) => {
@@ -16,7 +16,7 @@ const FieldLabel: FunctionComponent<FieldLabelProps> = ({
 
     return (
         <label className={ labelClasses }>
-            { text }
+            { copy }
         </label>
     );
 }

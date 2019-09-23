@@ -1,5 +1,5 @@
 export default interface FieldLabelProps {
-    text: string,
+    copy: string,
     classList?: string,
     error?: string,
 }

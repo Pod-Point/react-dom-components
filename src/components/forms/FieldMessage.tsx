@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import * as styles from './styles';
 
 const FieldMessage: FunctionComponent<FieldMessageProps> = ({
-    text,
+    copy,
     classList,
     error,
 }) => {
@@ -16,7 +16,7 @@ const FieldMessage: FunctionComponent<FieldMessageProps> = ({
 
     return (
         <p className={ classes }>
-            { text }
+            { copy }
         </p>
     );
 }
