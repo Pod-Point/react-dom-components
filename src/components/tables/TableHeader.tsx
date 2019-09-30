@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import TableHeaderProps from '../../interfaces/components/tables/TableHeader';
 import _ from 'lodash';
 import classNames from 'classnames';
-import * as styles from './styles';
+import columnBaseStyles from './styles';
 
-function TableHeader({
+const TableHeader: FunctionComponent<TableHeaderProps> = ({
     headings,
-}) {
+}) => {
     const columnClasses = (
         'uppercase text-sm text-grey-primary'
     );
 
     const classes = classNames(
-        styles.columnBaseStyles,
+        columnBaseStyles,
         columnClasses
     );
 

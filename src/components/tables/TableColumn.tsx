@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import TableColumnProps from '../../interfaces/components/tables/TableColumn';
 import classNames from 'classnames';
-import * as styles from './styles';
+import columnBaseStyles from './styles';
 
-function TableColumn({
+const TableColumn: FunctionComponent<TableColumnProps> = ({
     children,
     classList,
-}) {
+}) => {
     const classes = classNames(
-        styles.columnBaseStyles,
+        columnBaseStyles,
         classList,
     );
 

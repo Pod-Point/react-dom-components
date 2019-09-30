@@ -25,10 +25,14 @@ const SelectField: FunctionComponent<SelectFieldProps> = ({
 
     return (
         <div>
-            <FieldLabel
-                text={ label }
-                classList="mb-2"
-            />
+            {
+                label && (
+                    <FieldLabel
+                        copy={ label }
+                        classList="mb-2"
+                    />
+                )
+            }
             <div className="relative">
                 <select
                     className={ selectClasses }
@@ -41,11 +45,15 @@ const SelectField: FunctionComponent<SelectFieldProps> = ({
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7" viewBox="0 0 13 7"><path d="M 12 1 L 1 1 L 6.5 6.5 L 12 1 L 6.5 6.5" fill="rgb(25, 25, 26)" stroke="rgb(25, 25, 26)" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 </div>
             </div>
-            <FieldMessage
-                text={ message }
-                error={ error }
-                classList="mt-2"
-            />
+            {
+                message && (
+                    <FieldMessage
+                        copy={ message }
+                        error={ error }
+                        classList="mt-2"
+                    />
+                )
+            }
         </div>
     );
 }

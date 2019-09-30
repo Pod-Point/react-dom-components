@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import TagProps from '../../interfaces/components/Tags/Tag';
 import classNames from 'classnames';
 import * as styles from './styles';
 
-function Tag({
+const Tag: FunctionComponent<TagProps> = ({
     kind,
     title,
     classList,
-}) {
+}) => {
     let kindStyles;
 
     switch (kind) {

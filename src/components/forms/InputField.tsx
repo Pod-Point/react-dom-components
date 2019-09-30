@@ -25,10 +25,14 @@ const InputField: FunctionComponent<InputFieldProps> = ({
 
     return (
         <div>
-            <FieldLabel
-                text={ label }
-                classList="mb-2"
-            />
+            {
+                label && (
+                    <FieldLabel
+                        copy={ label }
+                        classList="mb-2"
+                    />
+                )
+            }
             <input
                 id={ id }
                 type={ type || 'text' }
@@ -36,11 +40,15 @@ const InputField: FunctionComponent<InputFieldProps> = ({
                 placeholder={ placeholder }
                 disabled={ disabled }
             />
-            <FieldMessage
-                text={ message }
-                error={ error }
-                classList="mt-2"
-            />
+            {
+                message && (
+                    <FieldMessage
+                        copy={ message }
+                        error={ error }
+                        classList="mt-2"
+                    />
+                )
+            }
         </div>
     );
 }

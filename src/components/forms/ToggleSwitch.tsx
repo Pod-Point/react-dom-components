@@ -32,7 +32,7 @@ const ToggleSwitch: FunctionComponent<ToggleSwitchProps> = ({
                 <span className={ switchClasses }></span>
             </label>
             { label && <FieldLabel
-                text={ label }
+                copy={ label }
                 classList="flex-1"
             />
             }

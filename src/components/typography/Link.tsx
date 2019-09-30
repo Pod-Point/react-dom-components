@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import LinkProps from '../../interfaces/components/Typography/Link';
 import classNames from 'classnames';
 
-function Button({
+const Link: FunctionComponent<LinkProps> = ({
     title,
     url,
     classList,
     external,
-}) {
+}) => {
     const baseStyles = (
         'underline'
     );
@@ -17,10 +18,10 @@ function Button({
     );
 
     return (
-        <a className={ classes } href={ url } target={ external && '_blank' }>
+        <a className={ classes } href={ url } target={ external ? '_blank' : '_self' }>
             { title }
         </a>
     );
 }
 
-export default Button;
+export default Link;

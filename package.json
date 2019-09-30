@@ -5,6 +5,7 @@
   "scripts": {
     "tailwind:watch": "postcss src/styles/styles.css -o src/styles/output.css -w",
     "tailwind:build": "postcss src/styles/styles.css -o src/styles/output.css",
+    "lint": "./node_modules/.bin/eslint src",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -6,7 +6,7 @@ import TableHeader from "./TableHeader";
 import TableRow from "./TableRow";
 
 class Table extends PureComponent<TableProps, TableState> {
-    constructor(props) {
+    constructor(props: any) {
         super(props);
 
         this.state = {
@@ -16,7 +16,7 @@ class Table extends PureComponent<TableProps, TableState> {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(id) {
+    handleClick(id: number) {
         this.setState({
             selectedId: id,
         });
@@ -42,7 +42,11 @@ class Table extends PureComponent<TableProps, TableState> {
 
         return (
             <table className={ classes }>
-                <TableHeader headings={ headings } />
+                {
+                    headings && (
+                        <TableHeader headings={ headings } />
+                    )
+                }
                 <tbody>
                     {
                         rowData.map((data, index) => <TableRow
