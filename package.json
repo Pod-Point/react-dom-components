@@ -2,22 +2,6 @@
   "name": "react-dom-components",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@tailwindcss/custom-forms": "^0.2.0",
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.3",
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "classnames": "^2.2.6",
-    "docz-plugin-css": "^0.11.0",
-    "lodash": "^4.17.15",
-    "postcss-import": "^12.0.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "tailwindcss": "^1.1.2",
-    "typescript": "^3.6.2"
-  },
   "scripts": {
     "tailwind:watch": "postcss src/styles/styles.css -o src/styles/output.css -w",
     "tailwind:build": "postcss src/styles/styles.css -o src/styles/output.css",
@@ -43,10 +27,26 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@sentry/browser": "^5.6.3",
+    "@tailwindcss/custom-forms": "^0.2.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.3",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "classnames": "^2.2.6",
+    "docz-plugin-css": "^0.11.0",
+    "lodash": "^4.17.15",
+    "postcss-import": "^12.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.2",
+    "tailwindcss": "^1.1.2",
+    "typescript": "^3.6.2"
+  },
   "devDependencies": {
     "@pod-point/eslint-config-podpoint-base": "pod-point/eslint-config-podpoint-base",
     "@pod-point/eslint-config-podpoint-react": "pod-point/eslint-config-podpoint-react",
-    "babel-eslint": "^10.0.3",
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
     "eslint": "^6.3.0",
