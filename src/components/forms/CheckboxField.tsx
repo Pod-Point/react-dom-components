@@ -28,7 +28,7 @@ const CheckboxField: FunctionComponent<CheckboxProps> = ({
                 checked={ checked }
             />
             { label && <FieldLabel
-                text={ label }
+                copy={ label }
                 classList="flex-1"
                 error={ error }
             /> }

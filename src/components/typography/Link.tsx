@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import LinkProps from '../../interfaces/components/Typography/Link';
+import LinkProps from '../../interfaces/components/typography/Link';
 import classNames from 'classnames';
 
 const Link: FunctionComponent<LinkProps> = ({

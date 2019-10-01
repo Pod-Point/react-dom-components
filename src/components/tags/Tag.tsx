@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import TagProps from '../../interfaces/components/Tags/Tag';
+import TagProps from '../../interfaces/components/tags/Tag';
 import classNames from 'classnames';
 import * as styles from './styles';
 
