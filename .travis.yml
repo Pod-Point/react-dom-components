@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - 8
+
+before_install:
+  - npm install -g yarn
+
+install:
+  - yarn
+
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+
+branches:
+  except:
+    - staging
+
+sudo: false
+
+script:
+  - npm run lint
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
