@@ -38,6 +38,6 @@ const ToggleSwitch: FunctionComponent<ToggleSwitchProps> = ({
             }
         </div>
     );
-}
+};
 
 export default ToggleSwitch;

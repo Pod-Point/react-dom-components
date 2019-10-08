@@ -51,6 +51,6 @@ const InputField: FunctionComponent<InputFieldProps> = ({
             }
         </div>
     );
-}
+};
 
 export default InputField;

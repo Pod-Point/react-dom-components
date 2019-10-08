@@ -19,6 +19,6 @@ const FieldLabel: FunctionComponent<FieldLabelProps> = ({
             { copy }
         </label>
     );
-}
+};
 
 export default FieldLabel;

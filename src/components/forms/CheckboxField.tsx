@@ -34,6 +34,6 @@ const CheckboxField: FunctionComponent<CheckboxProps> = ({
             /> }
         </div>
     );
-}
+};
 
 export default CheckboxField;

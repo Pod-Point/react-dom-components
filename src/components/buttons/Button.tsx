@@ -41,6 +41,6 @@ const Button: FunctionComponent<ButtonProps> = ({
             { title }
         </button>
     );
-}
+};
 
 export default Button;

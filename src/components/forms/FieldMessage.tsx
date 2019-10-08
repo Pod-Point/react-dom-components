@@ -19,6 +19,6 @@ const FieldMessage: FunctionComponent<FieldMessageProps> = ({
             { copy }
         </p>
     );
-}
+};
 
 export default FieldMessage;

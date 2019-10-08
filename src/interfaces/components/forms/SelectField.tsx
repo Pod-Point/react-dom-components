@@ -1,10 +1,10 @@
 export default interface SelectFieldProps {
-    label?: string,
-    message?: string,
-    disabled?: boolean,
-    error?: string,
-    classList?: string,
-    data: Array<string>,
-    onChange: any,
-    selectedOption: string,
+    label?: string;
+    message?: string;
+    disabled?: boolean;
+    error?: string;
+    classList?: string;
+    data: string[];
+    onChange: any;
+    selectedOption: string;
 }

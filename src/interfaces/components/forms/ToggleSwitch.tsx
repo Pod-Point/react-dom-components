@@ -1,5 +1,5 @@
 export default interface InputFieldProps {
-    label?: string,
-    active: boolean,
-    onChange: any,
+    label?: string;
+    active: boolean;
+    onChange: any;
 }
