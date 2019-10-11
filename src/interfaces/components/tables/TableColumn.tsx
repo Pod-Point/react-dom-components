@@ -1,3 +1,3 @@
 export default interface TableColumnProps {
-    classList?: string,
+    classList?: string;
 }

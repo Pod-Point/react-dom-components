@@ -8,4 +8,4 @@ export {
     TableColumn,
     TableHeader,
     TableRow,
-}
+};

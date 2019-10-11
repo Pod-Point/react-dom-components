@@ -1,3 +1,3 @@
 export default interface TableHeaderProps {
-    headings: Array<string>,
+    headings: string[];
 }

@@ -2,11 +2,11 @@ import React, { PureComponent } from 'react';
 import { TableProps, TableState } from '../../interfaces/components/tables/Table';
 import _ from 'lodash';
 import classNames from 'classnames';
-import TableHeader from "./TableHeader";
-import TableRow from "./TableRow";
+import TableHeader from './TableHeader';
+import TableRow from './TableRow';
 
 class Table extends PureComponent<TableProps, TableState> {
-    constructor(props: any) {
+    public constructor(props: any) {
         super(props);
 
         this.state = {
@@ -16,13 +16,13 @@ class Table extends PureComponent<TableProps, TableState> {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(id: number) {
+    public handleClick(id: number) {
         this.setState({
             selectedId: id,
         });
     }
 
-    render() {
+    public render() {
         const {
             headings,
             rowData,

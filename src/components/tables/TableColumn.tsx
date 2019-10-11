@@ -17,6 +17,6 @@ const TableColumn: FunctionComponent<TableColumnProps> = ({
             { children }
         </td>
     );
-}
+};
 
 export default TableColumn;

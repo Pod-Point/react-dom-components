@@ -1,5 +1,5 @@
 export interface TableRowProps {
-    rowData: Array<string>,
-    selected: boolean,
-    handleClick: any,
+    rowData: string[];
+    selected: boolean;
+    handleClick: any;
 }

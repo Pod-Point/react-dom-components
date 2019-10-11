@@ -13,18 +13,18 @@ const TableHeader: FunctionComponent<TableHeaderProps> = ({
 
     const classes = classNames(
         styles.columnBaseStyles,
-        columnClasses
+        columnClasses,
     );
 
     return (
         <thead className="w-full">
             <tr className="w-full">
                 {
-                    headings.map(heading => <th className={ classes } key={ _.uniqueId() }>{ heading }</th>)
+                    headings.map((heading) => <th className={ classes } key={ _.uniqueId() }>{ heading }</th>)
                 }
             </tr>
         </thead>
     );
-}
+};
 
 export default TableHeader;

@@ -1,9 +1,9 @@
 export interface TableProps {
-    headings?: Array<string>,
-    rowData: Array<Array<string>>,
-    classList?: string,
+    headings?: string[];
+    rowData: string[][];
+    classList?: string;
 }
 
 export interface TableState {
-    selectedId: number | null,
+    selectedId: number | null;
 }

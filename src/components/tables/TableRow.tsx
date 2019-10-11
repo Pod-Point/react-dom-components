@@ -10,13 +10,13 @@ const TableRow: FunctionComponent<TableRowProps> = ({
     handleClick,
 }) => {
     const classes = classNames(
-        selected && 'bg-grey-4'
+        selected && 'bg-grey-4',
     );
 
     return (
         <tr className="w-full cursor-pointer" onClick={ handleClick }>
             {
-                rowData.map(data =>
+                rowData.map((data) =>
                     <TableColumn
                         classList={ classes }
                         key={ _.uniqueId() }
@@ -26,6 +26,6 @@ const TableRow: FunctionComponent<TableRowProps> = ({
             }
         </tr>
     );
-}
+};
 
 export default TableRow;
