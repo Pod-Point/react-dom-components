@@ -1,0 +1,40 @@
+---
+name: Typography
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Link from "../../../components/typography/Link";
+import '../../../styles/output.css';
+
+# Link
+Link components used for internal and external links
+
+## Link
+<Props of={ Link } />
+
+### Basic use
+<Playground>
+    <Link
+        url="http://www.pod-point.com"
+        title="Link"
+    />
+</Playground>
+
+### Link Examples
+
+***external***
+<Link
+    url="http://www.pod-point.com"
+    title="Link"
+    external
+/>
+
+## Custom Link
+<Playground>
+    <Link
+        url="http://www.pod-point.com"
+        title="Link"
+        classList="text-red-primary font-bold bg-blue-3 p-2"
+    />
+</Playground>
