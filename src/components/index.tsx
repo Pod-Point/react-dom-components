@@ -19,6 +19,13 @@ import {
     Tag,
 } from './tags';
 
+import {
+    Table,
+    TableColumn,
+    TableHeader,
+    TableRow,
+} from './tables';
+
 export {
     Button,
     CheckboxField,
@@ -29,4 +36,8 @@ export {
     ToggleSwitch,
     Container,
     Tag,
+    Table,
+    TableColumn,
+    TableHeader,
+    TableRow,
 };
