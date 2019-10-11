@@ -12,6 +12,14 @@ import {
 } from './forms';
 
 import {
+    IconInitials,
+} from './icons';
+
+import {
+    Container,
+} from './layout';
+
+import {
     Table,
     TableColumn,
     TableHeader,
@@ -26,6 +34,8 @@ export {
     InputField,
     SelectField,
     ToggleSwitch,
+    IconInitials,
+    Container,
     Table,
     TableColumn,
     TableHeader,
