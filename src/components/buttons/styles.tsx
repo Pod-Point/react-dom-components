@@ -3,8 +3,8 @@ const baseStyles = (
 );
 
 const defaultStyles = {
-    pY: 'py-3',
     fontSize: 'text-base',
+    pY: 'py-3',
 };
 
 const primaryStyles = {
@@ -16,8 +16,8 @@ const secondaryStyles = {
 };
 
 const smallStyles = {
-    pY: 'py-2',
     fontSize: 'text-sm',
+    pY: 'py-2',
 };
 
 export {
