@@ -16,6 +16,9 @@ class Table extends PureComponent<TableProps, TableState> {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    /**
+     * Handles the click event.
+     */
     public handleClick(id: number) {
         this.setState({
             selectedId: id,
