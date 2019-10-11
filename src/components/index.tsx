@@ -11,6 +11,13 @@ import {
     ToggleSwitch,
 } from './forms';
 
+import {
+    Table,
+    TableColumn,
+    TableHeader,
+    TableRow,
+} from './tables';
+
 export {
     Button,
     CheckboxField,
@@ -19,4 +26,8 @@ export {
     InputField,
     SelectField,
     ToggleSwitch,
+    Table,
+    TableColumn,
+    TableHeader,
+    TableRow,
 };
