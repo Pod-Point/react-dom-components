@@ -11,6 +11,14 @@ import {
     ToggleSwitch,
 } from './forms';
 
+import {
+    Container,
+} from './layout';
+
+import {
+    Tag,
+} from './tags';
+
 export {
     Button,
     CheckboxField,
@@ -19,4 +27,6 @@ export {
     InputField,
     SelectField,
     ToggleSwitch,
+    Container,
+    Tag,
 };
