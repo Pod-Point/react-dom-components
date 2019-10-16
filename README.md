@@ -10,28 +10,28 @@ npm install --save @pod-point/react-dom-components
 ```
 git clone git@github.com:Pod-Point/react-dom-components.git
 cd react-dom-components
-yarn
+npm install
 ```
 
 ### Tasks
 To run a local development version of the components in Docz
 ```
-yarn run docz:dev
+npm install run docz:dev
 ```
 
 To run a build version of the components in Docz
 ```
-yarn run docz:build
+npm install run docz:build
 ```
 
 To make edits to the TailwindCSS config or styles
 ```
-yarn run tailwind:watch
+npm install run tailwind:watch
 ```
 
 To build the TailwindCSS config or styles
 ```
-yarn run tailwind:build
+npm install run tailwind:build
 ```
 
 ### Linters and IDE setup
