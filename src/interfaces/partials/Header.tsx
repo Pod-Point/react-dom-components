@@ -4,4 +4,6 @@ export default interface HeaderProps {
         firstName: string,
         lastName: string,
     };
+    buttonText?: string;
+    buttonClick?: any;
 }

@@ -1,0 +1,62 @@
+---
+name: Tags
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Tag from '../../../components/tags/Tag';
+import '../../../styles/output.css';
+
+# Tags
+Documentation and examples for tag component.
+
+There are a couple of predefined tags 'kinds' (_primary and secondary_), providing consistency. <br />
+Tailwind classes can be passed via the _classList_ prop to create custom tag styles.
+
+## Tag
+<Props of={ Tag } />
+
+### Basic use
+<Playground>
+    <Tag kind="primary" title="Tag copy" />
+</Playground>
+
+### Examples
+
+***bgClass***
+<Tag
+    kind="primary"
+    title="Tag copy"
+    bgClass="bg-grey-dark"
+    borderColourClass="border-grey-dark"
+/>
+
+***textColourClass***
+<Tag
+    kind="primary"
+    title="Tag copy"
+    textColourClass="text-black"
+/>
+
+***borderColourClass***
+<Tag
+    kind="primary"
+    title="Tag copy"
+    borderColourClass="border-black"
+/>
+
+## Secondary Tag
+<Playground>
+    <Tag
+        kind="secondary"
+        title="Secondary Tag copy"
+    />
+</Playground>
+
+## Custom Tag
+<Playground>
+    <Tag
+        title="Secondary Tag copy"
+        classList="bg-black text-green-2 border-dashed border border-blue-1"
+    />
+</Playground>
