@@ -12,11 +12,27 @@ import {
 } from './forms';
 
 import {
+    IconInitials,
+} from './icons';
+
+import {
+    Container,
+} from './layout';
+
+import {
+    Tag,
+} from './tags';
+
+import {
     Table,
     TableColumn,
     TableHeader,
     TableRow,
 } from './tables';
+
+import {
+    Link,
+} from './typography';
 
 export {
     Button,
@@ -26,8 +42,13 @@ export {
     InputField,
     SelectField,
     ToggleSwitch,
+    IconInitials,
+    Container,
+    Container,
+    Tag,
     Table,
     TableColumn,
     TableHeader,
     TableRow,
+    Link,
 };
