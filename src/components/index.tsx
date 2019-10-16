@@ -44,7 +44,6 @@ export {
     ToggleSwitch,
     IconInitials,
     Container,
-    Container,
     Tag,
     Table,
     TableColumn,
