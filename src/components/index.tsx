@@ -26,6 +26,10 @@ import {
     TableRow,
 } from './tables';
 
+import {
+    Link,
+} from './typography';
+
 export {
     Button,
     CheckboxField,
@@ -40,4 +44,5 @@ export {
     TableColumn,
     TableHeader,
     TableRow,
+    Link,
 };
