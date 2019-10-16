@@ -16,6 +16,10 @@ import {
 } from './layout';
 
 import {
+    Tag,
+} from './tags';
+
+import {
     Table,
     TableColumn,
     TableHeader,
@@ -35,6 +39,7 @@ export {
     SelectField,
     ToggleSwitch,
     Container,
+    Tag,
     Table,
     TableColumn,
     TableHeader,
