@@ -12,6 +12,10 @@ import {
 } from './forms';
 
 import {
+    IconInitials,
+} from './icons';
+
+import {
     Container,
 } from './layout';
 
@@ -38,6 +42,8 @@ export {
     InputField,
     SelectField,
     ToggleSwitch,
+    IconInitials,
+    Container,
     Container,
     Tag,
     Table,
