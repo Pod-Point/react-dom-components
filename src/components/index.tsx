@@ -12,6 +12,14 @@ import {
 } from './forms';
 
 import {
+    Container,
+} from './layout';
+
+import {
+    Tag,
+} from './tags';
+
+import {
     Table,
     TableColumn,
     TableHeader,
@@ -26,6 +34,8 @@ export {
     InputField,
     SelectField,
     ToggleSwitch,
+    Container,
+    Tag,
     Table,
     TableColumn,
     TableHeader,
