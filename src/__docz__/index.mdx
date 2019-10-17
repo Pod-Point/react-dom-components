@@ -1,0 +1,122 @@
+---
+name: A components library
+route: /
+---
+
+import '../styles/output.css'
+
+# Pod Point React Components
+The React DOM Components is a library of base styles and components designed for rapid prototyping for React Web projects, built with React and TypeScript.
+
+## Getting Started
+### Installation
+```
+npm install --save @pod-point/react-dom-components
+```
+
+### Development
+```
+git clone git@github.com:Pod-Point/react-dom-components.git
+cd react-dom-components
+npm install
+```
+
+### Tasks
+To run a local development version of the components in Docz
+```
+npm run docz:dev
+```
+
+To run a build version of the components in Docz
+```
+npm run docz:build
+```
+
+To make edits to the TailwindCSS config or styles
+```
+npm run watch:tailwind
+```
+
+To build the TailwindCSS config or styles
+```
+npm run build:tailwind
+```
+
+### Linters and IDE setup
+We use [Pod Point's React ESLint package](https://github.com/Pod-Point/eslint-config-podpoint-react) for React projects.
+For CSS pattern consistency, we use a third party package called ```stylelint```. This is required as we are using Tailwind's ```@apply``` method in the custom CSS files.
+To see how to set this up in VS Code, please refer to [this article.](https://www.meidev.co/blog/visual-studio-code-css-linting-with-tailwind/)
+
+
+## Building components
+- Add a new component by creating either a new folder or ```.tsx``` file under a current folder in ```src > components```.
+- Add props/state types as a file in the ```src/interfaces``` folder.
+- Add any tests into ```src/__tests___``` folder.
+- Document the code by adding a ```.mdx``` file into ```__docz__``` folder, using the same file name as the component.
+
+
+## Design and styles
+This styleguide uses the utility-first CSS framework [TailwindCSS](https://tailwindcss.com/) to style components.
+
+### Why TailwindCSS
+Most CSS frameworks do too much, they come with all sorts of predesigned components like buttons, cards, and alerts that might help you move quickly at first,
+but cause more pain than they cure when it comes time to make your site stand out with a custom design. <br />
+[Read more](https://tailwindcss.com/#what-is-tailwind)
+
+### How to use TailwindCSS
+Tailwind is a utility-first CSS framework, therefore style elements by applying pre-existing classes directly in HTML tags. <br />
+For example:
+```
+<button class="bg-green-primary text-white px-6 rounded text-center hover:bg-green-1">
+  Button
+</button>
+```
+[Read more](https://tailwindcss.com/docs/utility-first)
+
+### Customise TailwindCSS
+Tailwind classes are generated from a config file found at the root of this project.
+From here it is possible to add further classes, for example, ```colors``` for backgrounds, text, border etc. <br />
+[Read more](https://tailwindcss.com/docs/configuration/)
+
+If custom styles are required, then a ```.css``` file can be added to ```src > styles > custom```.
+These styles are built using [PostCSS](https://postcss.org/).
+
+
+## Why Docz
+Docz is an easy to use documentation generator, which takes advantage of MDX files alowing seamless use of JSX in markdown documents.
+- Zero config and easy to learn. No unnecessary build steps with confusing setups.
+- Blazing fast. Built with performance in mind from the start.
+- Easy to customize. Create something that will be easy to use and customize.
+- MDX based. The best standard for writing documentation.
+- Pluggable. Plugins are the best choice when you need a custom and flexible solution.<br />
+[Read more](https://www.docz.site/docs/introduction)
+
+_<small>This library is using Docz version 1.2.0</small>_
+
+### Example Docz
+```
+---
+name: Buttons
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Button from "../../../components/buttons/Button";
+
+# Buttons
+<Props of={ Button } />
+
+### Basic use
+<Playground>
+    <Button
+        kind="primary"
+        title="Button"
+    />
+</Playground>
+```
+
+
+## Modules
+A list of third party enhancements used in this library:
+- [classnames](https://github.com/JedWatson/classnames) - Allows conditional styles
+- [@tailwindcss/custom-forms](https://github.com/tailwindcss/custom-forms/blob/master/README.md) - Applies pseudo checked styles for Tailwind
