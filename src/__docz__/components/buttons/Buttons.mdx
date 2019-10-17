@@ -1,0 +1,71 @@
+---
+name: Buttons
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Button from '../../../components/buttons/Button';
+import '../../../styles/output.css';
+
+# Buttons
+Use button components for actions in forms, dialogs, and more with support for multiple sizes, states, etc. <br />
+
+There are a couple of predefined button 'kinds' (_primary and secondary_), providing consistency. <br />
+Tailwind classes can be passed via the _classList_ prop to create custom button styles.
+
+## Primary Button
+<Props of={ Button } />
+
+### Basic use
+<Playground>
+    <Button
+        kind="primary"
+        title="Button"
+    />
+</Playground>
+
+### Primary Button Examples
+
+***onClick***
+<Button
+    kind="primary"
+    title="Button"
+    onClick={ () => alert('Clicked')}
+/>
+
+***small***
+<Button
+    kind="primary"
+    title="Button"
+    small
+/>
+
+***disabled***
+<Button
+    kind="primary"
+    title="Button"
+    disabled
+/>
+
+***fullwidth***
+<Button
+    kind="primary"
+    title="Button"
+    fullwidth
+/>
+
+## Secondary Button
+<Playground>
+    <Button
+        kind="secondary"
+        title="Secondary Button"
+    />
+</Playground>
+
+## Custom Button
+<Playground>
+    <Button
+        title="Custom Button"
+        classList="bg-black text-white hover:bg-grey-primary"
+    />
+</Playground>

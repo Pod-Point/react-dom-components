@@ -1,0 +1,82 @@
+---
+name: Tables
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Table from '../../../components/tables/Table';
+import TableHeader from '../../../components/tables/TableHeader';
+import TableRow from '../../../components/tables/TableRow';
+import TableColumn from '../../../components/tables/TableColumn';
+import '../../../styles/output.css';
+
+# Tables
+Documentation of table component for displaying data.
+
+## Table
+<Props of={ Table } />
+
+### Basic use
+<Playground>
+    <Table
+        headings={[
+            'header one',
+            'header two',
+            'header three',
+        ]}
+        rowData={[
+            [
+                'Row one Column one',
+                'Row one Column two',
+                'Row one Column three',
+            ],
+            [
+                'Row two Column one',
+                'Row two Column two',
+                'Row two Column three',
+            ],
+            [
+                'Row three Column one',
+                'Row three Column two',
+                'Row three Column three',
+            ],
+        ]}
+    />
+</Playground>
+
+
+## TableHeader
+<Props of={ TableHeader } />
+
+### Basic use
+<Playground>
+    <TableHeader
+        headings={[
+            'header one',
+            'header two',
+            'header three',
+        ]}
+    />
+</Playground>
+
+## TableRow
+<Props of={ TableRow } />
+
+### Basic use
+<Playground>
+    <TableRow
+        rowData={[
+            'Row one',
+            'Row two',
+            'Row three',
+        ]}
+    />
+</Playground>
+
+## TableColumn
+<Props of={ TableColumn } />
+
+### Basic use
+<Playground>
+    <TableColumn>Column copy</TableColumn>
+</Playground>

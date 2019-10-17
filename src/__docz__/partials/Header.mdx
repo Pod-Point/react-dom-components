@@ -1,0 +1,27 @@
+---
+name: Header
+menu: Partials
+---
+
+import { Playground, Props } from 'docz';
+import Header from "../../partials/Header";
+import '../../styles/output.css';
+
+# Page Header
+Header component
+
+## Page Header
+<Props of={ Header } />
+
+### Basic use
+<Playground>
+    <Header
+        userName={ {
+            firstName: 'John',
+            lastName: 'Smith',
+         } }
+        projectName="RFID Management"
+        buttonClick={ () => alert('Clicked') }
+        buttonText="Button"
+    />
+</Playground>

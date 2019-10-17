@@ -1,0 +1,191 @@
+---
+name: Form Fields
+menu: Components
+---
+
+import { PureComponent } from 'react';
+import { Playground, Props } from 'docz';
+import InputField from '../../../components/forms/InputField';
+import SelectField from '../../../components/forms/SelectField';
+import CheckboxField from '../../../components/forms/CheckboxField';
+import ToggleSwitch from '../../../components/forms/ToggleSwitch';
+import '../../../styles/output.css';
+
+# Forms Fields
+Examples and usage guidelines for form components for creating a wide variety of forms.
+
+Textual form controls, like _input_ and _select_, use the **inputBaseStyles**, found in the _'forms > styles.js'_ file.
+
+<!-- Text input field -->
+## Input Field
+Be sure to use an appropriate type attribute on all inputs (e.g. email for email address or password for secure password) to take advantage of newer input controls like email verification, password entry, and more.
+<Props of={ InputField } />
+
+### Basic use
+<Playground>
+    <InputField />
+</Playground>
+
+### Input Field Examples
+
+***type***
+<InputField type="password" />
+
+***placeholder***
+<InputField placeholder="placeholder" />
+
+***label***
+<InputField label="Label copy" />
+
+***information***
+<InputField message="Information copy" />
+
+***error***
+<InputField message="Error message" error />
+
+***disabled***
+<InputField placeholder="Disabled field" disabled />
+
+<!-- Select field -->
+## Select Field
+<Props of={ SelectField } />
+
+### Basic use
+<Playground>
+    <SelectField data={ ['one', 'two', 'three'] } />
+</Playground>
+
+### Select Field Examples
+
+***onChange***
+<SelectField data={ ['one', 'two', 'three'] } onChange={ () => alert('Changed') } />
+
+***label***
+<SelectField data={ ['one', 'two', 'three'] } label="Label copy" />
+
+***message***
+<SelectField data={ ['one', 'two', 'three'] } message="Message copy" />
+
+***error***
+<SelectField data={ ['one', 'two', 'three'] } message="Error message" error />
+
+***disabled***
+<SelectField data={ ['one', 'two', 'three'] } disabled />
+
+***selectedOption***
+<SelectField data={ ['one', 'two', 'three'] } selectedOption="three" />
+
+<!-- Checkbox field -->
+## Checkbox Field
+<Props of={ InputField } />
+
+### Basic use
+<Playground>
+    <CheckboxField
+        label="Checkbox copy"
+    />
+</Playground>
+
+### With parent component
+<Playground>
+    {
+        class Parent extends PureComponent {
+            constructor() {
+                super()
+                this.state = { checked: false }
+
+                this.handleChange = this.handleChange.bind(this);
+            }
+
+            handleChange() {
+                const { checked } = this.state;
+
+                this.setState({
+                    checked: !checked,
+                }, alert(`Changed, checked state is currently ${ checked }`))
+            }
+
+            render() {
+                return (
+                    <CheckboxField
+                        label="Checkbox copy"
+                        checked={ this.state.checked }
+                        onChange={ this.handleChange }
+                    />
+                )
+            }
+        }
+    }
+</Playground>
+
+### Checkbox Field Examples
+
+***checked***
+<CheckboxField
+    label="Checkbox copy"
+    checked
+/>
+
+***error***
+<CheckboxField
+    label="Checkbox error"
+    checked
+    error
+/>
+
+<!-- ToggleSwitch field -->
+## Toggle Switch Field
+<Props of={ ToggleSwitch } />
+
+### Basic use
+<Playground>
+    <ToggleSwitch />
+</Playground>
+
+### Toggle Switch Examples
+
+***active***
+<ToggleSwitch
+    active={ true }
+/>
+
+***label***
+<ToggleSwitch
+    label="Label copy"
+/>
+
+***onChange***
+<ToggleSwitch
+    onChange={ () => alert('Changed') }
+/>
+
+### With parent component
+<Playground>
+    {
+        class Parent extends PureComponent {
+            constructor() {
+                super()
+                this.state = { active: false }
+
+                this.handleChange = this.handleChange.bind(this);
+            }
+
+            handleChange() {
+                const { active } = this.state;
+
+                this.setState({
+                    active: !active,
+                }, alert(`Changed, active state is currently ${ active }`))
+            }
+
+            render() {
+                return (
+                    <ToggleSwitch
+                        active={ this.state.active }
+                        onChange={ this.handleChange }
+                    />
+                )
+            }
+        }
+    }
+</Playground>

@@ -1,0 +1,25 @@
+---
+name: Layout
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import Container from '../../../components/layout/Container';
+import '../../../styles/output.css';
+
+# Layout
+The layout components offer consistent structure and layouts of pages.
+
+<small>*Each of these components will be displayed with a purple border and a set height to ensure they are visible for this demo.</small>
+
+## Container
+Container class from Tailwind sets a responsive max-width.<br />
+This component aligns the container to the centre and adds consistent padding.<br />
+_Centre align and padding can be added in the Tailwind config also_.
+
+<Props of={ Container } />
+
+### Basic use
+<Playground>
+    <Container classList="h-16 border-2 border-purple-2" />
+</Playground>
