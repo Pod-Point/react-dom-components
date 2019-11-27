@@ -1,8 +1,11 @@
-/coverage
+/.docz
 /node_modules
-/src
+/src/__docz__
+/public
+/build
 .gitignore
 .travis.yml
+.DS_Store
 doczrc.js
 package-lock.json
 postcss.config.css
@@ -10,3 +13,4 @@ stylelint.config.js
 tailwind.config.js
 tsconfig.json
 tslint.json
+npm-debug.log
