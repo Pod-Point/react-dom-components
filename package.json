@@ -1,11 +1,28 @@
 {
-  "name": "react-dom-components",
+  "name": "@pod-point/react-dom-components",
   "version": "1.0.2",
+  "description": "The Pod Point React DOM Components is a library of base styles and components designed for rapid prototyping for React Web projects.",
+  "main": "src/components/index.tsx",
+  "author": "Pod Point Software Team <software@pod-point.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pod-Point/react-dom-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pod-Point/react-dom-components/issues"
+  },
+  "homepage": "https://github.com/Pod-Point/react-dom-components#readme",
+  "keywords": [
+    "TypeScript",
+    "React",
+    "Docz"
+  ],
   "private": false,
   "scripts": {
     "tailwind:watch": "postcss src/styles/styles.css -o src/styles/output.css -w",
     "tailwind:build": "postcss src/styles/styles.css -o src/styles/output.css",
-    "lint": "node_modules/.bin/tslint 'src/**/*.{ts,tsx}'",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "npm run lint -- --fix",
     "coverage": "react-scripts test --coverage --runInBand",
     "start": "react-scripts start",
@@ -63,8 +80,5 @@
     "postcss-cli": "^6.1.3",
     "react-hot-loader": "^4.12.11",
     "stylelint-config-recommended": "^2.2.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
