@@ -1,7 +1,7 @@
 {
   "name": "react-dom-components",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.2",
+  "private": false,
   "scripts": {
     "tailwind:watch": "postcss src/styles/styles.css -o src/styles/output.css -w",
     "tailwind:build": "postcss src/styles/styles.css -o src/styles/output.css",
