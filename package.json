@@ -1,6 +1,6 @@
 {
   "name": "@pod-point/react-dom-components",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "The Pod Point React DOM Components is a library of base styles and components designed for rapid prototyping for React Web projects.",
   "main": "src/components/index.tsx",
   "author": "Pod Point Software Team <software@pod-point.com>",
