@@ -51,7 +51,7 @@
     "@types/classnames": "^2.2.9",
     "@types/jest": "^24.0.18",
     "@types/lodash": "^4.14.141",
-    "@types/node": "^12.7.3",
+    "@types/node": "^12.20.55",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "classnames": "^2.2.6",
