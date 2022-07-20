@@ -52,7 +52,7 @@
     "@types/jest": "^24.0.18",
     "@types/lodash": "^4.14.141",
     "@types/node": "^12.7.3",
-    "@types/react": "^16.9.2",
+    "@types/react": "^16.14.28",
     "@types/react-dom": "^16.9.0",
     "classnames": "^2.2.6",
     "docz-core": "0.11.2",
